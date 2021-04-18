@@ -46,7 +46,7 @@ const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
 const { yta, ytv, igdl } = require('./lib/ytdl')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
-prefix = 'z'
+prefix = '#'
 fake = 'NgErikMenSediH'
 numbernye = '0'
 banChats = true
@@ -92,6 +92,7 @@ hexa.on('chat-update', async (mek) => {
 		const q = args.join(' ')
 		const botNumber = hexa.user.jid
 		const botNumberss = hexa.user.jid + '@c.us'
+		const ownerNumber = ["082130301023@s.whatsapp.net"]
 		const isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
 		// const isSelfNumber = config.NomorSELF
