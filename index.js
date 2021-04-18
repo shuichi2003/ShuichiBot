@@ -972,8 +972,8 @@ Prefix : 「 ${prefix} 」
 			fakegroup(pingnya)
 			})
 			break   
-        case 'group':
-	case 'grup':
+	case prefix+ 'group':
+	case prefix+ 'grup':
 			var itsme = `${numbernye}@s.whatsapp.net`
 			var split = `${fake}`
 			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
@@ -996,6 +996,42 @@ Prefix : 「 ${prefix} 」
 			client.sendMessage(from, `「 *SUCCES CLOSE GRUP* 」`, MessageType.text, groupp)
 			}
 			break
+	case prefix+ 'gcname':
+			var itsme = `${numbernye}@s.whatsapp.net`
+			var split = `${fake}`
+			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+			const gcname = {
+			contextInfo: {
+			participant: itsme,
+			quotedMessage: {
+			extendedTextMessage: {
+			text: split,
+							}
+						}
+					}
+				}
+			await client.groupUpdateSubject(from, `${body.slice(8)}`)
+			client.sendMessage(from, `「 *CHANGE TO ${body.slice(8)}* 」`, MessageType.text, gcname)
+			break
+	case prefix+ 'gcdesk':
+			var itsme = `${numbernye}@s.whatsapp.net`
+			var split = `${fake}`
+			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+			const gcdesk = {
+			contextInfo: {
+			participant: itsme,
+			quotedMessage: {
+			extendedTextMessage: {
+			text: split,
+							
+							}
+						}
+					}
+				}
+			await client.groupUpdateDescription(from, `${body.slice(8)}`)
+			client.sendMessage(from, `「 *CHANGE TO ${body.slice(8)}* 」`, MessageType.text, gcdesk)
+			break
+
 default:
 if (budy.startsWith('x')){
 return hexa.sendMessage(from, JSON.stringify(eval(budy.slice(2)),null,'\t'),text, {quoted: mek})
