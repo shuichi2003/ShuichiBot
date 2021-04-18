@@ -47,7 +47,7 @@ const { yta, ytv, igdl } = require('./lib/ytdl')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
 prefix = 'z'
-fake = 'HEXAGONZ'
+fake = 'NgErikMenSediH'
 numbernye = '0'
 banChats = true
 targetpc = '6285751056816'
