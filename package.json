@@ -1,7 +1,7 @@
 {
-  "name": "HEXAGONZ",
+  "name": "ShuichiBot",
   "version": "1.0.0",
-  "description": "HEXA",
+  "description": "Shui",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -47,7 +47,7 @@
   "keywords": [
     "Wasu"
   ],
-  "author": "HEXAGON",
+  "author": "NGERIK",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hexagonz"
