@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hexagonz"
+    "url": "git+https://github.com/shuichi2003"
   },
   "keywords": [
     "Wasu"
@@ -50,7 +50,7 @@
   "author": "NGERIK",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hexagonz"
+    "url": "https://github.com/shuichi2003"
   },
-  "homepage": "https://github.com/Hexagonz"
+  "homepage": "https://github.com/shuichi2003"
 }
