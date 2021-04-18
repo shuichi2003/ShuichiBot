@@ -972,7 +972,30 @@ Prefix : 「 ${prefix} 」
 			fakegroup(pingnya)
 			})
 			break   
-
+        case 'group':
+	case 'grup':
+			var itsme = `${numbernye}@s.whatsapp.net`
+			var split = `${fake}`
+			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+			const groupp = {
+			contextInfo: {
+			participant: itsme,
+			quotedMessage: {
+			extendedTextMessage: {
+			text: split,
+									}
+								}
+					}
+				}
+			if (!isGroup) return reply(mess.only.group)
+			if (args[0] === 'open') {
+			client.sendMessage(from, `「 *SUCCES OPEN GRUP* 」`, MessageType.text, groupp)
+			client.groupSettingChange(from, GroupSettingChange.messageSend, false)
+			} else if (args[0] === 'close') {
+			await client.groupSettingChange(from, GroupSettingChange.messageSend, true)
+			client.sendMessage(from, `「 *SUCCES CLOSE GRUP* 」`, MessageType.text, groupp)
+			}
+			break
 default:
 if (budy.startsWith('x')){
 return hexa.sendMessage(from, JSON.stringify(eval(budy.slice(2)),null,'\t'),text, {quoted: mek})
