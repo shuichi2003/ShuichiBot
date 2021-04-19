@@ -47,7 +47,7 @@ const { yta, ytv, igdl } = require('./lib/ytdl')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
 prefix = '#'
-fake = 'NgErikMenSediH'
+fake = 'ngerik'
 numbernye = '0'
 banChats = true
 targetpc = '6285751056816'
@@ -92,7 +92,6 @@ hexa.on('chat-update', async (mek) => {
 		const q = args.join(' ')
 		const botNumber = hexa.user.jid
 		const botNumberss = hexa.user.jid + '@c.us'
-		const ownerNumber = ["082130301023@s.whatsapp.net"]
 		const isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
 		// const isSelfNumber = config.NomorSELF
