@@ -245,66 +245,47 @@ switch (command) {
     	var menu = `Hai ${pushname}
 Prefix : 「 ${prefix} 」
 
-*</MAKER>*
-► _${prefix}sticker_
-► _${prefix}swm_ <author|packname>
-► _${prefix}take_ <author|packname>
-► _${prefix}fdeface_
-► _${prefix}emoji_
+╭─────❰ *</MAKER>* ❱─────
+├❖ _$ prefix}sticker_
+├❖ _${prefix}swm_ <author|packname>
+├❖ _${prefix}take_ <author|packname>
+├❖ _${prefix}fdeface_
+├❖ _${prefix}emoji_
+╰────────────────────
 
-*</CONVERT>*
-► _${prefix}toimg_
-► _${prefix}tomp3_
-► _${prefix}tomp4_
-► _${prefix}slow_
-► _${prefix}fast_
-► _${prefix}reverse_
+╭────❰ *</CONVERT>* ❱─────
+├⊱❥ _${prefix}toimg_
+├⊱❥ _${prefix}tomp3_
+├⊱❥ _${prefix}tomp4_
+├⊱❥ _${prefix}slow_
+├⊱❥ _${prefix}fast_
+├⊱❥ _${prefix}reverse_
+╰─────────────────────
 
-*</UP STORY>*
-► _${prefix}upswteks_
-► _${prefix}upswimage_
-► _${prefix}upswvideo_
+╭─────❰ *</TAG>* ❱────────
+├❍ _${prefix}hidetag_
+├❍ _${prefix}kontag_
+├❍ _${prefix}sticktag_
+├❍ _${prefix}totag_
+╰─────────────────────
 
-*</FUN>*
-► _${prefix}fitnah_
-► _${prefix}fitnahpc_
-► _${prefix}kontak_
-
-*</TAG>*
-► _${prefix}hidetag_
-► _${prefix}kontag_
-► _${prefix}sticktag_
-► _${prefix}totag_
-
-*</DOWNLOAD>*
-► _${prefix}ytsearch_ <query>
-► _${prefix}igstalk_ <query>
-► _${prefix}play_ <query>
-► _${prefix}video_ <query>
-► _${prefix}ytmp3_ <link>
-► _${prefix}ytmp4_ <link>
-► _${prefix}ig_ <link>
-► _${prefix}twitter_ <link>
-► _${prefix}tiktok_ <link>
-► _${prefix}tiktokaudio_ <link>
-► _${prefix}fb_ <link>
-► _${prefix}brainly_ <query>
-► _${prefix}image_ <query>
-► _${prefix}anime_ <random>
-
-*</OTHER>*
-► _${prefix}self_
-► _${prefix}public_
-► _${prefix}setthumb_
-► _${prefix}settarget_
-► _${prefix}setfakeimg_
-► _${prefix}setreply_
-► _${prefix}ping_
-► _${prefix}join_
-► _${prefix}term_ <code>
-► _x_ <code>
-
-❏ *SELF-BOT* ❏`
+╭────❰ *</DOWNLOAD>* ❱────
+├► _${prefix}ytsearch_ <query>
+├► _${prefix}igstalk_ <query>
+├► _${prefix}play_ <query>
+├► _${prefix}video_ <query>
+├► _${prefix}ytmp3_ <link>
+├► _${prefix}ytmp4_ <link>
+├► _${prefix}ig_ <link>
+├► _${prefix}twitter_ <link>
+├► _${prefix}tiktok_ <link>
+├► _${prefix}tiktokaudio_ <link>
+├► _${prefix}fb_ <link>
+├► _${prefix}brainly_ <query>
+├► _${prefix}image_ <query>
+│► _${prefix}anime_ <random>
+╰──────────────────────
+❏ *Ngerik SELF-BOT* ❏`
         	fakestatus(menu)
            	break
     case prefix+ 'kontag':
