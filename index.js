@@ -46,8 +46,8 @@ const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
 const { yta, ytv, igdl } = require('./lib/ytdl')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
-prefix = '#'
-fake = 'ngerik'
+prefix = 'z'
+fake = 'HEXAGONZ'
 numbernye = '0'
 banChats = true
 targetpc = '6285751056816'
@@ -972,65 +972,6 @@ Prefix : 「 ${prefix} 」
 			fakegroup(pingnya)
 			})
 			break   
-	case prefix+ 'group':
-	case prefix+ 'grup':
-			var itsme = `${numbernye}@s.whatsapp.net`
-			var split = `${fake}`
-			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-			const groupp = {
-			contextInfo: {
-			participant: itsme,
-			quotedMessage: {
-			extendedTextMessage: {
-			text: split,
-									}
-								}
-					}
-				}
-			if (!isGroup) return reply(mess.only.group)
-			if (args[0] === 'open') {
-			client.sendMessage(from, `「 *SUCCES OPEN GRUP* 」`, MessageType.text, groupp)
-			client.groupSettingChange(from, GroupSettingChange.messageSend, false)
-			} else if (args[0] === 'close') {
-			await client.groupSettingChange(from, GroupSettingChange.messageSend, true)
-			client.sendMessage(from, `「 *SUCCES CLOSE GRUP* 」`, MessageType.text, groupp)
-			}
-			break
-	case prefix+ 'gcname':
-			var itsme = `${numbernye}@s.whatsapp.net`
-			var split = `${fake}`
-			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-			const gcname = {
-			contextInfo: {
-			participant: itsme,
-			quotedMessage: {
-			extendedTextMessage: {
-			text: split,
-							}
-						}
-					}
-				}
-			await client.groupUpdateSubject(from, `${body.slice(8)}`)
-			client.sendMessage(from, `「 *CHANGE TO ${body.slice(8)}* 」`, MessageType.text, gcname)
-			break
-	case prefix+ 'gcdesk':
-			var itsme = `${numbernye}@s.whatsapp.net`
-			var split = `${fake}`
-			// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-			const gcdesk = {
-			contextInfo: {
-			participant: itsme,
-			quotedMessage: {
-			extendedTextMessage: {
-			text: split,
-							
-							}
-						}
-					}
-				}
-			await client.groupUpdateDescription(from, `${body.slice(8)}`)
-			client.sendMessage(from, `「 *CHANGE TO ${body.slice(8)}* 」`, MessageType.text, gcdesk)
-			break
 
 default:
 if (budy.startsWith('x')){
